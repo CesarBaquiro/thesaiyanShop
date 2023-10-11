@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cambiar el color de todo el texto a blanco en el cuerpo de la página */
+body {
+    color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+}
+
+/*--------------h1 nav title-------------------*/
+
+h1 {
+    margin: 20px; /* Eliminamos el margen predeterminado del h1 */
+}
+
+/*--------------nav-------------------*/
+
+.nav-list ul {
+    list-style: none; /* Eliminamos los marcadores de lista predeterminados */
+    padding: 0; /* Eliminamos el relleno predeterminado de la lista */
+    display: flex; /* Utilizamos flexbox para alinear los elementos en fila */
+}
+
+.nav-list li,
+.nav-list a {
+    margin: 20px; /* Espaciado entre los elementos li */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+/*--------------slides-------------------*/
+
+.Slides {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-height: 550px; */
+}
+
+.Slides img {
+    width: calc(33.33%);
+}
+
+/*--------------advertising-band-------------------*/
+
+.advertising-band {
+    background: linear-gradient(90deg, #d10000 34.01%, #580a0a 100%);
+    padding: 10px; /* Espaciado interno para el contenedor */
+    overflow: auto; /* Agregamos desplazamiento horizontal si los elementos son demasiado anchos */
+}
+
+.advertising-band ul {
+    display: flex; /* Utilizamos flexbox para alinear los elementos en fila */
+    justify-content: space-around; /* Distribuye los elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/*-----------------post----------------------*/
+
+.post {
+    max-height: 700px;
+    background-color: black;
+    overflow: hidden; /* Para limpiar el flujo de elementos flotantes */
+}
+
+.post img {
+    float: left; /* Hacemos que la imagen flote a la izquierda */
+    margin-right: 10px; /* Añadimos un margen derecho para separar la imagen del contenido */
+    width: 30%; /* Ajusta el ancho de la imagen según tus preferencias */
+    margin: 50px;
+}
+
+.post-text {
+    margin: 50px; /* Eliminamos el margen predeterminado de los elementos h2 y p */
+}
+
+.post p {
+    margin: 30px;
+}
+
+/*-----------------testimonials----------------------*/
+
+.testimonials {
+    height: 770px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.testimonials h2 {
+    margin: 50px 50px 50px 200px;
+}
+
+.testimonials-container {
+    margin: 50px;
+    position: relative;
+    display: flex; /* Utiliza flexbox para centrar el contenido verticalmente */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.testimonials-card {
+    position: absolute; /* Establece posición absoluta para que pueda ser posicionado dentro del contenedor */
+    bottom: -80px; /* Alinea el contenedor en la parte inferior */
+    right: 200px; /* Alinea el contenedor en la parte derecha */
+    background-color: #f0f0f0; /* Solo para ilustrar el contenedor */
+    padding: 10px; /* Espaciado interno para el contenedor */
+}
+
+.testimonials img {
+    border-radius: 15px;
+}
+
+.testimonials-card {
+    background: linear-gradient(247deg, #00305b 1.25%, #0474dc 101.25%);
+    border-radius: 15px;
+    width: 520px;
+    height: 320px;
+}
+
+.testimonials-card h3,
+.testimonials-card p {
+    margin: 20px;
+}
+
+/* ------------------contac-us------------------------ */
+
+.contact-us {
+    margin: 50px;
+    color: black;
+    display: flex; /* Utilizamos flexbox para crear columnas */
+    justify-content: flex-start; /* Distribuye los elementos en los extremos de la fila */
+}
+
+input,
+textarea {
+    border-radius: 15px;
+    border: 5px solid #000;
+    width: 18rem;
+    height: 2rem;
+    margin: 10px 10px 20px 0px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #000000;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.btn-form {
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: 5px solid #000;
+    width: 19rem;
+    height: 2.5rem;
+    margin: 10px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.contact-us h2 {
+    margin-bottom: 30px;
+}
+
+.contac-form,
+.find-me {
+    position: relative;
+    left: 200px;
+    width: 350px; /* Asignamos un ancho a cada columna */
+    display: flex;
+    flex-direction: column;
+}
+
+.find-me {
+    margin-left: 150px;
+}
+
+.find-me p {
+    margin: 15px 15px 15px 0px;
+}
+
+.find-me ul {
+    list-style: none; /* Eliminamos los marcadores de lista predeterminados */
+
+    padding: 0; /* Eliminamos el relleno predeterminado de la lista */
+}
+
+.find-me li {
+    display: flex; /* Utilizamos flexbox para controlar el diseño */
+    align-items: center; /* Centramos verticalmente los elementos en cada <li> */
+    /* Espaciado inferior entre los elementos <li> */
+}
+
+.find-me li p {
+    margin-left: 10px; /* Espacio entre el enlace y el párrafo dentro de <li> */
+}
+
+/* ------------------footer------------------------ */
+
+footer {
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+
+.footer-container h2,
+.footer-container p {
+    padding: 50px;
+}
+
+.footer-container {
+    display: flex; /* Utilizamos flexbox para alinear elementos en fila */
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
+.footer-text-column {
+    flex: 1; /* El contenido se expandirá para llenar el espacio disponible */
+    padding-left: 20px; /* Espaciado a la izquierda para separar del h2 */
+}
+
+/* Estilos adicionales según sea necesario */
+
+/*---------------------plans-----------------------*/
+
+.plans {
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+.plans img {
+    opacity: 0.5;
+    width: 100%;
+}
+
+.plans-content {
+    position: absolute; /* Establece posición absoluta para superponer el contenido sobre la imagen */
+    top: 0; /* Alinea la parte superior del contenido con la parte superior de la imagen */
+    left: 0; /* Alinea la parte izquierda del contenido con la parte izquierda de la imagen */
+    width: 100%; /* Haz que el contenido ocupe todo el ancho del contenedor */
+    text-align: center; /* Opcional: para centrar el texto horizontalmente */
+}
+
+.plans-op {
+    display: flex; /* Utilizamos flexbox para alinear los elementos en fila */
+    flex-direction: row; /* Alineamos los elementos en fila */
+    justify-content: space-around; /* Centramos horizontalmente los elementos */
+    align-items: center;
+    margin: 50px;
+}
+
+.plans-content h1,
+.plans-content h4 {
+    margin: 50px;
+}
+
+.plans-content img {
+    width: 25px;
+}
+
+.plan-summary h3,
+.plan-summary h2 {
+    margin-bottom: 20px;
+}
+
+/*------------plans line separator-------------*/
+
+.separator {
+    border: 1px solid white; /* Agrega la línea separadora vertical blanca */
+    height: 60%; /* Haz que la línea se extienda hasta el final del contenedor */
+    position: absolute; /* Establece posición absoluta para la línea */
+}
+
+/*------------catalogue-content-------------*/
+
+.catalogue-content {
+    display: flex; /* Utilizamos flexbox para el diseño */
+}
+
+.left-bar {
+    width: 20%; /* Establecemos el ancho del 30% para left-bar */
+
+    color: black;
+    margin: 70px 50px 0px 50px;
+}
+
+.products-content {
+    display: flex; /* Utilizamos flexbox para el diseño */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px; /* Espaciado interno opcional */
+}
+
+.filter-select {
+    margin-top: 10px;
+    width: 118px;
+    height: 24px;
+    border-radius: 20px;
+    background: #d2d2d2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filter-select p,
+.filter-select img {
+    margin: 0px 8px 0px 8px;
+}
+
+.left-bar li {
+    margin-top: 20px;
+    list-style: none; /* Eliminamos los marcadores de lista predeterminados */
+    cursor: pointer;
+}
+
+.card-product {
+    border-radius: 15px;
+    border: 3px solid #000;
+    width: 264px;
+    height: 354px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 50px 20px 20px 20px;
+}
+
+.card-product img {
+    margin: 20px;
+    width: 215px;
+    height: 198px;
+}
+
+.card-product h4,
+.card-product p {
+    text-align: left;
+    margin: 0px 0px 10px 20px;
+}
+
+.btn-add {
+    border-radius: 20px;
+    background: black;
+    color: white;
+    width: 215px;
+    height: 39px;
+    cursor: pointer;
+}
+
+/* ----------post 2 blog-------------- */
+
+.post-with-background {
+    background-image: url("./img/women-banner.jpg"); /* Reemplaza 'ruta-de-la-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* Otros estilos de fondo según sea necesario */
+}
+
+.post-text {
+    width: 80%;
+}
+
+.post-two {
+    max-height: 700px;
+    background-color: black;
+    overflow: hidden; /* Para limpiar el flujo de elementos flotantes */
+}
+
+.post-two img {
+    float: left; /* Hacemos que la imagen flote a la izquierda */
+    margin-right: 10px; /* Añadimos un margen derecho para separar la imagen del contenido */
+    width: 30%; /* Ajusta el ancho de la imagen según tus preferencias */
+    margin: 50px;
+}
+
+.post-two p {
+    margin: 30px;
+}
+
+.post-with-background-two {
+    background-image: url("./img/person-bg.jpg"); /* Reemplaza 'ruta-de-la-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* Otros estilos de fondo según sea necesario */
+}
+
+/* ---------------Cart content----------------- */
+
+.cart-content {
+    position: relative;
+}
+
+.cart-products {
+    flex-direction: column;
+}
+
+/* -------------------Cards cart------------------------- */
+
+.card-product-cart {
+    border-radius: 15px;
+    border: 3px solid #000;
+    width: 412px;
+    height: 171px;
+    color: rgb(0, 0, 0);
+    margin: 60px 0px 60px 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card-product-cart img {
+    margin: 20px;
+    width: 125px;
+    height: 125px;
+}
+
+.card-product-info-cart {
+    flex-direction: row;
+}
+
+.card-product-info-cart h4,
+.card-product-info-cart p {
+    margin: 17px 0px 10px 0px;
+}
+
+.card-product-info-cart img {
+    position: absolute; /* Posición absoluta dentro del contenedor padre */
+    width: 20px;
+    height: 20px;
+    bottom: 0; /* Lo colocamos en la esquina inferior */
+    right: 0; /* Lo colocamos en la esquina derecha */
+    cursor: pointer;
+}
+
+/* ---------------Button amount---------------- */
+
+.btn-amount {
+    width: 80px;
+    height: 27px;
+    border-radius: 15px;
+    border: 2px solid #000;
+}
+
+.btn-amount {
+    display: flex; /* Utilizamos flexbox para alinear elementos en fila */
+    justify-content: space-around; /* Espacia uniformemente los elementos */
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
+.btn-amount button {
+    background: none; /* Eliminamos el fondo de los botones */
+    border: none; /* Eliminamos los bordes de los botones */
+    font-size: 22px;
+    padding: 0; /* Eliminamos el relleno para ajustar el tamaño */
+    margin: 0; /* Eliminamos el margen para evitar espacios innecesarios */
+    cursor: pointer;
+}
+
+.btn-amount-separator {
+    width: 2px; /* Ancho de la línea separadora */
+    background-color: #000000; /* Color de la línea separadora */
+    height: 100%; /* Altura de la línea separadora */
+}
+
+/* --------------summary box right----------------- */
+
+.right-summary-box {
+    position: absolute; /* Establecemos la posición absoluta para el contenedor */
+    top: 0px; /* Lo posicionamos en la parte superior del contenedor padre */
+    right: 200px; /* Lo posicionamos en la parte derecha del contenedor padre */
+    color: black;
+    width: 301px;
+    height: 294px;
+    border-radius: 15px;
+    background: #e3e3e3;
+}
+
+.right-summary-box h4,
+.right-summary-box p {
+    padding: 15px;
+}
+
+.btn-send-order {
+    color: rgb(0, 0, 0);
+    background-color: #006bcd;
+    border-radius: 15px;
+    width: 16rem;
+    height: 2.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+.right-summary-box h2 {
+    padding-top: 20px;
+    text-align: center; /* Centra el contenido horizontalmente */
+    /* Estilos adicionales para el h2 y el botón si es necesario */
+}
