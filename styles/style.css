@@ -302,7 +302,33 @@ footer {
     position: absolute; /* Establece posición absoluta para la línea */
 }
 
-/*------------catalogue-content-------------*/
+/* ---------plans responsive------------- */
+@media (width <= 690px) {
+    .contenedores-planes {
+        height: 700px;
+    }
+
+    .plans-slide {
+        background-image: url("../img/train-plans.png");
+        background-repeat: no-repeat; /* Evitar que la imagen se repita */
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .plans-slide img {
+        height: 100%;
+    }
+
+    .plans-slide h1 {
+        margin: 50px;
+        text-align: center;
+    }
+
+    .blue-text {
+        color: rgb(0, 183, 255); /* Puedes utilizar el color que desees */
+    }
+}
+/*------------Catalogue-content-------------*/
 
 .catalogue-content {
     display: flex; /* Utilizamos flexbox para el diseño */
