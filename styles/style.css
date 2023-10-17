@@ -36,7 +36,6 @@ body {
 /*-----------------post----------------------*/
 
 .post {
-    max-height: 700px;
     background-color: black;
     overflow: hidden; /* Para limpiar el flujo de elementos flotantes */
 }
@@ -122,10 +121,10 @@ body {
 
     .testimonials-card {
         position: absolute;
-        bottom: -190px;
+        bottom: -215px;
         right: 12px;
         width: 73vw;
-        max-height: 65vh;
+
         padding: 10px;
     }
 }
