@@ -155,6 +155,7 @@ textarea {
     width: 18rem;
     height: 2rem;
     margin: 10px 10px 20px 0px;
+    padding: 12px;
 }
 
 input::placeholder,
@@ -374,7 +375,7 @@ footer {
     border-radius: 15px;
     border: 3px solid #000;
     width: 264px;
-    height: 354px;
+    height: 365px;
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 50px 20px 20px 20px;
@@ -525,30 +526,4 @@ footer {
     position: absolute; /* Establecemos la posición absoluta para el contenedor */
     top: 0px; /* Lo posicionamos en la parte superior del contenedor padre */
     right: 200px; /* Lo posicionamos en la parte derecha del contenedor padre */
-    color: black;
-    width: 301px;
-    height: 294px;
-    border-radius: 15px;
-    background: #e3e3e3;
-}
-
-.right-summary-box h4,
-.right-summary-box p {
-    padding: 15px;
-}
-
-.btn-send-order {
-    color: rgb(0, 0, 0);
-    background-color: #006bcd;
-    border-radius: 15px;
-    width: 16rem;
-    height: 2.8rem;
-    border: none;
-    cursor: pointer;
-}
-
-.right-summary-box h2 {
-    padding-top: 20px;
-    text-align: center; /* Centra el contenido horizontalmente */
-    /* Estilos adicionales para el h2 y el botón si es necesario */
 }
