@@ -334,6 +334,12 @@ footer {
     display: flex; /* Utilizamos flexbox para el diseño */
 }
 
+@media (width <= 690px) {
+    .catalogue-content {
+        flex-wrap: wrap;
+    }
+}
+
 .left-bar {
     width: 20%; /* Establecemos el ancho del 30% para left-bar */
 
@@ -345,6 +351,7 @@ footer {
     display: flex; /* Utilizamos flexbox para el diseño */
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100%;
     padding: 20px; /* Espaciado interno opcional */
 }
 
@@ -451,15 +458,22 @@ footer {
     flex-direction: column;
 }
 
+@media (width <= 690px) {
+    .cart-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 /* -------------------Cards cart------------------------- */
 
 .card-product-cart {
     border-radius: 15px;
     border: 3px solid #000;
     width: 412px;
-    height: 171px;
+    height: 175px;
     color: rgb(0, 0, 0);
-    margin: 60px 0px 60px 130px;
+    margin: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -521,9 +535,3 @@ footer {
 }
 
 /* --------------summary box right----------------- */
-
-.right-summary-box {
-    position: absolute; /* Establecemos la posición absoluta para el contenedor */
-    top: 0px; /* Lo posicionamos en la parte superior del contenedor padre */
-    right: 200px; /* Lo posicionamos en la parte derecha del contenedor padre */
-}
